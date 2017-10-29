@@ -27,7 +27,7 @@ namespace TesteDesconto
             this._desconto = desconto;
             _precoFinal = CalculorDeDesconto.calcularDesconto(_preco, _desconto);
         }
-        //Estão o programa irá verificar se o resultado esta correto
+        //Estão o programa irá verificar se o resultado obtido esta correto
         [Then("o programa retornará que o preço final será de (.*)")]
         public void verificarResultado(double precoFinal)
         {
